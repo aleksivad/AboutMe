@@ -1,0 +1,41 @@
+.naslov {
+    background-color: antiquewhite;
+    padding: 6px;
+    text-align: center;
+    font-style: italic;
+}
+
+.hrana {
+    width: 20%;
+}
+
+.jela {
+    text-align: center;
+}
+
+.pretraga {
+    text-align: center;
+
+}
+
+.search {
+    height: 40px;
+    width: 35%;
+}
+
+.pret {
+    padding: 15px;
+}
+
+h5 {
+    padding-top: 8px; 
+}
+
+video {
+    width: 70%;
+
+}
+
+.video {
+    text-align: center;
+}

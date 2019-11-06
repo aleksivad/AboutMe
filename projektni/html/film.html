@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../javascript/jquery.min.js"></script>
+  <script src="../javascript/popper.min.js"></script>
+  <script src="../javascript/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/stil.css">
+  <link rel="stylesheet" href="../css/film.css">
+  <script src="../javascript/kviz.js"></script>
+  <title>Пројектни задатак</title>
+</head>
+
+<body>
+  <div class="jumbotron text-center header" style="margin-bottom:0">
+    <h1>Омиљени филм</h1>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse nav" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="pocetna.html">Почетна</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="rodj.html">Рођендански поклон</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="film.html">Омиљени филм</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="grad.html">Омиљени град</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hobi.html">Хоби</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="galerija.html">Галерија</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="kviz.html">Квиз</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="uredi trans">
+    <h3>ТРИ ИДИОТА</h3>
+    <p class="poravnaj">
+      Герхан и Раџу су типични студенти који долазе из таквих породица, у којима је диплома
+      бјег из сиромаштва, иако себе виде само у машинској струци. Упознају Ранчоа који долази из
+      богаташке породице и он им показује да живот није само поштивање правила и размишљање о
+      будућности, јер ако само размишљаш о будућности када ћеш живјети у садашњости. Због таквих ставова
+      долазе у сукоб са Вируом, деканом факултета, традиционалистом који не бјежи од својих принципа.
+    </p>
+  </div>
+
+  <div class="uredi">
+      <h6>ГОДИНА ОБЈАВЉИВАЊА: <p>25. 12. 2009.</p></h6>
+      <h6>ПРОСЈЕЧНА ОЦЈЕНА: <p>4.1 /5</p></h6>
+      <h6>ПРЕЗЕНТАЦИЈА ФИЛМА: <a href="https://www.imdb.com/title/tt1187043/" target="_blank">Три идиота</a></h6>
+  </div>
+
+  <div class="conteiner-fluid">
+    <div class="row">
+      <div class="main col-sm-6">
+        <!--<iframe width="100%" height="315" src="https://www.youtube.com/embed/xvszmNXdM4w" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+          <video class="video" controls style="background:transparent no-repeat url('../slike/triidiots.jpg');background-size:100%" poster="../slike/triidiots.jpg">
+              <source src="../video/TriIdiots.mp4" type="video/mp4">
+          </video>
+      </div>
+
+      <div class="card-deck phone col-sm-6">
+        <div class="card col-sm-4" >
+          <div class="card-body">
+            <h4 class="card-title">Р. Мадаван</h4>
+          </div>
+          <img class="card-img-top" src="../slike/madavan.jpg" alt="Madhavan">
+        </div>
+        <div class="card col-sm-4" >
+          <div class="card-body">
+            <h4 class="card-title">Шарман Јоши</h4>
+          </div>
+          <img class="card-img-top" src="../slike/sarman.jpeg" alt="Sharman Joshi">
+        </div>
+        <div class="card col-sm-4" >
+          <div class="card-body">
+            <h4 class="card-title">Амир Кхан</h4>
+          </div>
+          <img class="card-img-top" src="../slike/rancho.jpg" alt="Aamir Khan">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="komedija">
+    <form id="quiz" name="quiz" class="forma">
+      <br>
+      <p>Који је жанр овог филма?</p>
+      <input id="texbox" type="text" name="zanr">
+      <br>
+      <input id="dugme" type="button" value="Провјери" onclick="check();">
+      <br><br>
+    </form> 
+  
+    <div id="after_submit">
+      <p id="number_correct">Браво</p>
+    </div>
+  </div>
+
+  <div class="jumbotron text-center header" style="margin-bottom:0">
+    <p>&copy;Aлександра</p>
+    <span id="date"></span>
+    <script>
+      document.getElementById("date").innerHTML = new Date().toLocaleDateString();
+    </script>
+  </div>
+
+</body>
+
+</html>

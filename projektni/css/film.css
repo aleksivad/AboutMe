@@ -1,0 +1,35 @@
+.video {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    float: left;
+    text-align: center;
+  }
+
+  .komedija {
+    text-align: center;
+}
+
+#after_submit {
+    visibility: hidden;
+    padding: 16px;
+}
+
+.uredi {
+    padding: 15px;
+  }
+
+#texbox {
+    border-radius: 8px;
+}
+
+.trans {
+    background-color: rgba(33, 33, 33, 0.5);
+}
+
+  .poravnaj {
+    text-align: justify;
+}

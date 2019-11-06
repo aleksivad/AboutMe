@@ -1,0 +1,94 @@
+.header {
+    padding: 25px;
+    background-image: url("../slike/img1.jpeg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+}
+
+
+.footer {
+    padding: 25px;
+    background-image: url("../slike/img1.jpeg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100%;
+    bottom: 0%;
+}
+
+.size {
+    font-size: 19px;
+    text-align: justify;
+}
+
+body {
+    background-color: 	#f7d4d4;
+    overflow-x: hidden;
+}
+
+.scroll {
+    position:fixed; 
+    left:0; 
+    right: 0;
+    top:0; 
+    z-index:1;
+}
+
+.empty {
+    height: 190px;
+}
+
+.empty2 {
+    height: 5px;
+}
+
+.myimage {
+    width: 100%;
+    height: auto;
+}
+
+.prvi_red {
+    padding: 5px 10px;
+}
+
+.scrollable {
+    width: 55%;
+       
+  }
+ 
+  .forma {
+      padding-left: 15px;
+  }
+
+  .dugme {
+      background-color:	#fc9ccc;
+      border-radius: 7px;
+  }
+
+  .galerija {
+      text-align: center;
+      width: 100%;
+      height: 10%;
+  }
+
+  .tabela {
+    width:883px;
+    padding: 20px;
+    color: #f7d4d4;
+    background-image: linear-gradient(#2c2a2c, grey);
+  }
+
+  td {
+      padding: 10px;
+  }
+
+  .prozor {
+    color: #f7d4d4;
+    background-image: linear-gradient(to right, #2c2a2c, grey);
+    padding: 80px;
+  }
+
+  .ptica {
+      height: 80vh;
+      width: 80vh;
+  }

@@ -1,0 +1,58 @@
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 17, 2019 00:00:01").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = "<table class=\"tabela\"><tr><td>" + days + "</td><td>" + hours + "</td><td>" + minutes + "</td><td>" + seconds + "</td></tr><tr><td>дана</td><td>сати</td><td>минута</td><td>секунди</td></tr></table>";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Срећан рођендан!";
+  }
+}, 1000);
+
+
+function myMap() {
+  var mapProp= {
+    center:new google.maps.LatLng(44.771618, 17.189871),
+    zoom:15, 
+    panControl: true,
+    zoomControl: true,
+    mapTypeControl: true,
+    scaleControl: true,
+    streetViewControl: true,
+    overviewMapControl: true,
+    rotateControl: true
+  };
+
+  var element = document.getElementById("googleMap");
+  var map = new google.maps.Map(element, mapProp);
+  var marker = new google.maps.Marker({position: mapProp.center, animation:google.maps.Animation.BOUNCE});
+  marker.setMap(map);
+  
+  google.maps.event.addListener(marker,'click',function() {
+    map.setZoom(20);
+    map.setCenter(marker.getPosition());
+  });
+
+  var infowindow = new google.maps.InfoWindow({
+    content:"Овдје можете купити мој рођендански поклон"
+  });
+  infowindow.open(map,marker);
+  
+  }

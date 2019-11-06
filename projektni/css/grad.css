@@ -1,0 +1,42 @@
+.slika {
+    width: 100%;
+}
+
+.moskva {
+    padding-top: 50px; 
+    text-align: center;
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+}
+
+.zaglavlje {
+    background-color: gray;
+    text-align: center;
+}
+
+.transparent {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 33, 33, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zatvori {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,38 @@
+
+.tabela {
+    color: black;
+    text-align: center;
+    background: #ddd;
+    padding: 3px;
+    box-shadow: 0 0 5px 3px  #ccc;
+    margin: auto;
+    background-color: rgb(58, 183, 224);
+    border-radius: 15px;
+    font-size: 20px;
+    width: 60%;
+}
+
+.bali {
+    width: 80%;
+    height: 80%;
+}
+
+.poklon {
+    padding-left: 15px;
+}
+
+.map {
+    width:90vw;
+    height: 36vh;
+}
+
+@media only screen and (min-width: 576px) {
+    .map {
+        width: 45vw;
+        height: 50vh;
+    }
+
+    .tabela {
+        font-size: 40px;
+    }
+}
